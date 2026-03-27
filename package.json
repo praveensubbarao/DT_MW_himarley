@@ -1,0 +1,22 @@
+{
+  "name": "himarley-playwright",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test",
+    "test:desktop": "npx playwright test --project=chromium --project=firefox --project=webkit",
+    "test:mobile": "npx playwright test --project=pixel --project=iphone",
+    "test:all": "npx playwright test --project=chromium --project=firefox --project=webkit --project=pixel --project=iphone",
+    "test:headed": "npx playwright test --headed",
+    "install:browsers": "npx playwright install",
+    "check:spec-comments": "node ./scripts/validate-spec-comments.js",
+    "precommit": "npm run check:spec-comments",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@playwright/test": "1.54.1",
+    "typescript": "^5.7.3",
+    "dotenv": "^17.2.3",
+    "prettier": "^3.0.0"
+  }
+}
