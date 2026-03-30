@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run test:*)",
+      "Bash(npx playwright test*)",
+      "Bash(npx playwright show-report)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Read(**)",
+      "Write(tests/**)",
+      "Write(src/**)"
+    ],
+    "deny": [
+      "Bash(git push*)",
+      "Bash(rm -rf*)",
+      "Write(.env*)"
+    ]
+  }
+}
