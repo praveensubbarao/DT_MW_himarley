@@ -1,0 +1,8 @@
+node_modules
+.playwright
+playwright-report
+playwright-results
+.env
+*.log
+.DS_Store
+.vscode
