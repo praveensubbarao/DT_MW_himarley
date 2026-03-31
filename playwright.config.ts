@@ -27,6 +27,7 @@ export default defineConfig({
   workers: process.env.WORKER_COUNT ? Number(process.env.WORKER_COUNT) : 2,
   use: {
     baseURL: envURL(process.env.STACK),
+    headless: false,
     actionTimeout: 60_000,
     navigationTimeout: 60_000,
     screenshot: 'on',
