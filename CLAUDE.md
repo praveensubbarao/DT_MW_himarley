@@ -35,3 +35,7 @@ tests/
 Before generating any test code, read the relevant skill file:
 - Page objects → read tests/.claude/skills/playwright-pom/SKILL.md
 - Test scaffolding → read tests/.claude/skills/playwright-scaffolding/SKILL.md
+
+# Prompt Library
+Before writing a prompt from scratch, check .claude/prompts/index.md for an existing template.
+To capture a new prompt: npm run prompt:new -- --name "your-prompt-name" --category "scaffolding"

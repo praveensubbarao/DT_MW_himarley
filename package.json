@@ -11,7 +11,9 @@
     "install:browsers": "npx playwright install",
     "check:spec-comments": "node ./scripts/validate-spec-comments.js",
     "precommit": "npm run check:spec-comments",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prompt:new": "node ./scripts/new-prompt.js",
+    "agents": "cd agents && npx ts-node orchestrator/index.ts"
   },
   "devDependencies": {
     "@playwright/test": "1.54.1",

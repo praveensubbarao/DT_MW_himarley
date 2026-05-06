@@ -1,0 +1,5 @@
+[
+  "loads the Contact page and verifies the primary heading is visible @smoke",
+  "submits the contact form with valid data and shows a confirmation message @regression",
+  "shows validation errors when required fields are left empty @regression"
+]
