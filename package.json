@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "test": "npx playwright test",
+    "test:update-screenshots": "npx playwright test --update-snapshots",
     "test:desktop": "npx playwright test --project=chromium --project=firefox --project=webkit",
     "test:mobile": "npx playwright test --project=pixel --project=iphone",
     "test:all": "npx playwright test --project=chromium --project=firefox --project=webkit --project=pixel --project=iphone",
@@ -16,6 +17,8 @@
     "agents": "cd agents && npx ts-node orchestrator/index.ts"
   },
   "devDependencies": {
+    "@percy/cli": "^1.30.0",
+    "@percy/playwright": "^1.0.6",
     "@playwright/test": "1.54.1",
     "typescript": "^5.7.3",
     "dotenv": "^17.2.3",

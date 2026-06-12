@@ -1,6 +1,8 @@
 import { test, expect } from '@/utils/fixtures/homepageBaseTest';
 
 test.describe('Himarley homepage', () => {
+  test.use({ screenshotEnabled: true });
+
   // Steps:
   // 1. Open the configured homepage via Playwright base URL.
   // 2. Read the configured base URL from the page context.

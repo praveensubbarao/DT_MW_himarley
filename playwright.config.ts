@@ -17,6 +17,7 @@ function envURL(stack: string | undefined) {
 
 export default defineConfig({
   testDir: 'src/tests',
+  snapshotPathTemplate: '{testDir}/{testFileDir}/screenshots/{arg}-{projectName}{ext}',
   timeout: 360_000,
   expect: {
     timeout: 10_000,
